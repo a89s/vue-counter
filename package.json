@@ -1,5 +1,5 @@
 {
-  "name": "website-in-vue",
+  "name": "VUE Counter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
