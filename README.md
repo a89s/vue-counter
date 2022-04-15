@@ -1,1 +1,1 @@
-Lets see if this works. Pushingg from VS Code. Learning git :D
+Lets see if this works. Pushing from VS Code. Learning git :D
