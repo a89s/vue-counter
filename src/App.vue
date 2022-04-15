@@ -47,7 +47,6 @@ span {
 }
 .counter {
   padding: 20px;
-  font-family: sans-serif;
   text-transform: uppercase;
 }
 </style>
