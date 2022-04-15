@@ -1,26 +1,53 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <button @click="increaseCounter(20)">
+    Increase counter
+  </button>
+  <button @click="decreaseCounter(0)">
+    Decrease counter
+  </button>
+  <button @click="resetValue">
+    Reset
+  </button>
+  <div class="counter"><span>Count {{ count }}</span></div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      count: 0
+    }
+  },
+  methods: {
+    increaseCounter(increaseLimit) {
+      if(this.count < increaseLimit)
+        this.count++
+    },
+    decreaseCounter(decreaseLimit) {
+      if(this.count > decreaseLimit)
+        this.count--
+    },
+    resetValue() {
+      this.count = 0;
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+button {
+  padding: 20px;
+  border-radius: 10px;
+  border: 0px solid white;
+  margin-left: 10px;
+}
+span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.counter {
+  padding: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
 }
 </style>
