@@ -43,7 +43,7 @@ button {
 }
 span {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
 }
 .counter {
   padding: 20px;
