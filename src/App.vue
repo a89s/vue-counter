@@ -8,14 +8,15 @@
   <button @click="resetValue">
     Reset
   </button>
-  <div class="counter"><span>Count {{ count }}</span></div>
+  <div class="counter"><span>Count {{ count }}</span> {{ message }}</div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      count: 0
+      count: 0,
+      message: "Vue counter!"
     }
   },
   methods: {
